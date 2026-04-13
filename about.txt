@@ -1,0 +1,7 @@
+git hub action ==> to create CI/CD pipeline
+    CI= contineous integration  CD= contineous development
+    
+aleternate jenkin
+'
+
+work flows ==>
