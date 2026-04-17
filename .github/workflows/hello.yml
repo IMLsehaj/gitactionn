@@ -8,6 +8,7 @@ jobs:
         steps:
          - name: Print message
            run: echo "Hello, Github Action!"
+                echo "Sehajpreet Singh"
            
     say-name:
         runs-on: ubuntu-latest
