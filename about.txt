@@ -5,3 +5,35 @@ aleternate jenkin
 '
 
 work flows ==>
+    1 event when to run
+        types of event 
+            1 push
+            2 pull-request
+            3 specific-branch
+            4 schedule-
+    2 job what to run
+    3 steps how to run 
+
+    cooking
+        event== when to start cooking
+        job== main dish (job start hone pe virtua lmachine bane ge)
+
+
+commands 
+git add .
+git commit -m "message"
+git push origin main
+
+
+
+
+github adcttion is a tool to crerate or build ci cd pipeline 
+    ci ==> contineous integration
+        when ever we make any change to exsisting code we automate the following process
+            run test 
+            build code 
+            check formatting before merging with the main branch
+
+    cd ==> contineous development
+        after mrging the steps we need to follow for redevelopment after merging
+        
