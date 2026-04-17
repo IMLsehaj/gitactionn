@@ -10,7 +10,7 @@ jobs:
            run: |
             echo "Hello, Github Action!"
                 echo "Sehajpreet Singh"
-                echo "pull request"
+                echo "pull requesttry"
            
     say-name:
         runs-on: ubuntu-latest
