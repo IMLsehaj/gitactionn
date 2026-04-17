@@ -1,5 +1,5 @@
 name: My first WorkFlow
-on: push
+on: pull_request
 
 jobs:
     say-hello:
@@ -10,6 +10,7 @@ jobs:
            run: |
             echo "Hello, Github Action!"
                 echo "Sehajpreet Singh"
+                echo "pull request"
            
     say-name:
         runs-on: ubuntu-latest
@@ -17,3 +18,5 @@ jobs:
         steps:
          - name: Print message
            run: echo "Sehajpreet Singh"
+
+

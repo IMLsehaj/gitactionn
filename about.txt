@@ -56,6 +56,32 @@ types of events:
     1 push 
          syntax  
              on: push
+         example 
+name: My first WorkFlow
+on: push
+
+jobs:
+    say-hello:
+        runs-on: ubuntu-latest
+
+        steps:
+         - name: Print message
+           run: |
+            echo "Hello, Github Action!"
+                echo "Sehajpreet Singh"
+                
+           
+    say-name:
+        runs-on: ubuntu-latest
+
+        steps:
+         - name: Print message
+           run: echo "Sehajpreet Singh"
+
+
+
+
+
 
     2 pull request
         syntax
