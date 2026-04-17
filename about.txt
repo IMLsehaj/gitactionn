@@ -40,3 +40,40 @@ github adcttion is a tool to crerate or build ci cd pipeline
 
 WorkFlow is a file 
 wokflow file should beinside
+
+\
+\
+YML file(yml)
+
+    WorkFlow consists of threee things 
+    1 event : is trigger point (when to run)
+    2 job :what to run (multiple)
+    3 steps :how to run 
+
+
+
+types of events:
+    1 push 
+         syntax  
+             on: push
+
+    2 pull request
+        syntax
+            on: pull_request
+
+    3 specific branch
+        syntax
+            on:
+             push:
+              branch:
+               -main
+
+    4 multiple event
+        syntax
+            on: [push,pull_request]
+    
+    5 schedule (corn jobs)
+        syntax
+            on: 
+             schedule:
+              - corn:""
