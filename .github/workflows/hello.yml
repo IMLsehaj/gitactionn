@@ -1,5 +1,7 @@
 name: My first WorkFlow
-on: pull_request
+on: 
+    pull_request:
+    push:
 
 jobs:
     say-hello:
