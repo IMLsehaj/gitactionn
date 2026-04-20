@@ -1,25 +1,39 @@
-name: My first WorkFlow
-on: 
-    pull_request:
-    push:
+# name: My first WorkFlow
+# on: 
+#     pull_request:
+#     push:
+
+# jobs:
+#     say-hello:
+#         runs-on: ubuntu-latest
+
+#         steps:
+#          - name: Print message
+#            run: |
+#             echo "Hello, Github Action!"
+#                 echo "Sehajpreet Singh"
+#                 echo "pull requesttry"
+           
+#     say-name:
+#         needs: say-hello
+#         runs-on: ubuntu-latest
+
+#         steps:
+#          - name: Print message
+#            run: echo "Sehajpreet Singh"
+
+
+name: Uses action
+
+on: push
 
 jobs:
-    say-hello:
-        runs-on: ubuntu-latest
+  test:
+    runs-on: ubuntu-latest
 
-        steps:
-         - name: Print message
-           run: |
-            echo "Hello, Github Action!"
-                echo "Sehajpreet Singh"
-                echo "pull requesttry"
-           
-    say-name:
-        needs: say-hello
-        runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
 
-        steps:
-         - name: Print message
-           run: echo "Sehajpreet Singh"
-
-
+      - name: List files
+        run: ls -la
