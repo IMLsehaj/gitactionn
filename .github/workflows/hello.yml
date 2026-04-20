@@ -15,6 +15,7 @@ jobs:
                 echo "pull requesttry"
            
     say-name:
+        needs: say-hello
         runs-on: ubuntu-latest
 
         steps:
