@@ -23,9 +23,26 @@
 #            run: echo "Sehajpreet Singh"
 
 
+# name: Uses action
+
+# on: push
+
+# jobs:
+#   test:
+#     runs-on: ubuntu-latest
+
+#     steps:
+#       - name: Checkout code
+#         uses: actions/checkout@v4
+
+#       - name: List files
+#         run: ls -la
+
 name: Uses action
 
-on: push
+on:
+  push:
+  pull_request:
 
 jobs:
   test:
@@ -35,5 +52,13 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
+      - name: Setup Node.js 18
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+
+      - name: Check Node version
+        run: node -v
+
       - name: List files
-        run: ls -la
+        run: ls
