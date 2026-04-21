@@ -103,3 +103,9 @@ jobs:
             on: 
              schedule:
               - corn:""
+
+
+
+
+              package.json
+                "test": "echo test runn  successfull"

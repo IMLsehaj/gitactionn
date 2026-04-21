@@ -4,7 +4,8 @@
   "description": "in this we will learn about git action",
   "main": "index.js",
   "scripts": {
-    "test": "echo test runn  successfull"
+    "test": "echo \"test runn  successfull\" && exit 1"
+    
   },
   "repository": {
     "type": "git",

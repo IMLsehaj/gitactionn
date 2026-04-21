@@ -68,4 +68,10 @@ jobs:
       
       - name: run test
         run: npm run test
-        
+  deploy:
+    runs-on: ubuntu-latest
+    needs: test
+    steps:
+      - name: deploy
+        run: echo "deploye suyccess"
+    
