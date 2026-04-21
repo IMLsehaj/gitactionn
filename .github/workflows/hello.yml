@@ -63,4 +63,9 @@ jobs:
       - name: List files
         run: ls
 
+      - name: download dependancy
+        run: npm i
       
+      - name: run test
+        run: npm run test
+        
