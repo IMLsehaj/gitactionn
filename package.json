@@ -4,6 +4,7 @@
   "description": "in this we will learn about git action",
   "main": "index.js",
   "scripts": {
+    "lint": "eslint .",
     "test": "echo test runn  successfull"
     
   },
